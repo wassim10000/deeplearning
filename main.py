@@ -9,7 +9,6 @@ import os
 import sys
 import logging
 
-port = int(os.environ.get("PORT", 8000))
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, 
@@ -337,4 +336,4 @@ async def model_info():
     return model_info
 
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=port)
+    uvicorn.run(app, host='0.0.0.0', port=10000)
