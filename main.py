@@ -19,7 +19,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost",
-    "http://localhost:3000",
+    "http://localhost:3000","https://deeplearning-front.vercel.app"
 ]
 
 app.add_middleware(
