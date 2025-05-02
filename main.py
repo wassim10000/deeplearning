@@ -29,7 +29,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL_PATH = "../models/1.1"
+MODEL_PATH = "./models/1.1"
 logger.info(f"Model path exists: {os.path.exists(MODEL_PATH)}")
 
 # Global variable for model
